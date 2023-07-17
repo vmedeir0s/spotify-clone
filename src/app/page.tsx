@@ -14,7 +14,7 @@ export default function Home() {
 		<div className="h-screen flex flex-col">
 			<div className="flex flex-1">
 				<Sidebar />
-				<main className="flex-1 p-6">
+				<main className="flex-1 p-6 overflow-y-auto">
 					<div className="flex items-center gap-4">
 						<button className="rounded-full bg-black/40 p-1">
 							<ChevronLeft />

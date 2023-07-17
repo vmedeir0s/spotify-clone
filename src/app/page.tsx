@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function Home() {
 	return (
-		<div className="min-h-screen flex flex-col">
+		<div className="min-h-screen flex flex-col max-sm:h-[calc(100vh-55px)]">
 			<div className="flex flex-1">
 				<Sidebar />
 				<main className="flex-1 p-6 overflow-y-auto h-[calc(100vh-113px)]">

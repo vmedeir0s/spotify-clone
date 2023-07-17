@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br" style={{ height: "100%" }}>
+    <html lang="pt-br">
       <body className="bg-zinc-900 text-zinc-50">{children}</body>
     </html>
   )

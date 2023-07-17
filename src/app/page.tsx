@@ -8,14 +8,13 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
-
 export default function Home() {
 	return (
-		<div className="max-h-screen flex flex-col">
+		<div className="min-h-screen flex flex-col">
 			<div className="flex flex-1">
 				<Sidebar />
-				<main className="flex-1 p-6 overflow-y-auto">
-					<div className="flex items-center gap-4">
+				<main className="flex-1 p-6 overflow-y-auto h-[calc(100vh-113px)]">
+					<div className="flex items-center gap-4 max-sm:hidden">
 						<button className="rounded-full bg-black/40 p-1">
 							<ChevronLeft />
 						</button>
@@ -23,10 +22,10 @@ export default function Home() {
 							<ChevronRight />
 						</button>
 					</div>
-					<h1 className="font-semibold text-3xl mt-10">
+					<h1 className="font-semibold text-3xl mt-10 max-sm:mt-2">
 						Good Afternoon
 					</h1>
-					<div className="grid grid-cols-3 gap-4 mt-4">
+					<div className="grid grid-cols-3 gap-4 mt-4 max-md:grid-cols-2">
 						<a href="#" className="bg-white/5 rounded-md gap-4 flex items-center overflow-hidden hover:bg-white/10 transition-colors group">
 							<Image src="/album.jpg" width={104} height={104} alt="Exemplo de capa de album" />
 							<strong>Album</strong>

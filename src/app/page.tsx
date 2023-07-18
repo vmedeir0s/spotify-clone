@@ -20,7 +20,7 @@ export default function Home() {
 	}
 
 	return (
-		<div className="min-h-screen flex flex-col">
+		<div className="min-h-screen flex flex-col absolute inset-0">
 			<div className="flex flex-1">
 				<Sidebar />
 				<main className="flex-1 p-6 overflow-y-auto h-[calc(100vh-113px)]">
@@ -33,7 +33,7 @@ export default function Home() {
 						</button>
 					</div>
 					<h1 className="font-semibold text-3xl mt-10 max-sm:mt-2">
-						a Good {getCurrentTime()}
+						Good {getCurrentTime()}
 					</h1>
 					<div className="grid grid-cols-3 gap-4 mt-4 max-md:grid-cols-2">
 						<a href="#" className="bg-white/5 rounded-md gap-4 flex items-center overflow-hidden hover:bg-white/10 transition-colors group">

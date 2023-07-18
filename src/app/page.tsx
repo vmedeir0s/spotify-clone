@@ -20,10 +20,10 @@ export default function Home() {
 	}
 
 	return (
-		<div className="min-h-screen flex flex-col absolute inset-0">
+		<div className="h-screen flex flex-col absolute inset-0 max-sm:max-h-full">
 			<div className="flex flex-1">
 				<Sidebar />
-				<main className="flex-1 p-6 overflow-y-auto h-[calc(100vh-113px)]">
+				<main className="flex-1 p-6 overflow-y-auto h-[calc(100vh-113px)] max-sm:h-[calc(100vh-165px)]">
 					<div className="flex items-center gap-4 max-sm:hidden">
 						<button className="rounded-full bg-black/40 p-1">
 							<ChevronLeft />
